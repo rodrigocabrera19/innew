@@ -1,0 +1,87 @@
+#footerContainer {
+  background: #822cdd;
+  font-family: var(--innew-font);
+  color: #fff;
+}
+
+/* ESTILOS LOGO - LOCATION - CONTACTO Y REDES */
+.logoContacto-row {
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1.5rem 0;
+  row-gap: 3.5rem;
+}
+
+.locationColumn {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 1.5rem;
+}
+.location {
+  display: grid;
+  grid-template-columns: auto 85%;
+  min-width: 16em;
+  justify-content: start;
+  align-content: center;
+}
+
+.location span{
+  padding-top: .3rem;
+}
+
+.phoneNumber {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.phoneNumber p {
+  border: 1px solid #fff;
+  width: 60%;
+  font-size: 0.8rem;
+  padding: .1rem;
+  border-radius: 50px;
+  border-top-left-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.ContactoRedesColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 16em;
+  row-gap: .7rem;
+}
+
+.ContactoRedesColumn p {
+  margin: 0;
+  padding-bottom: .4rem;
+}
+.ContactoRedesColumn .mail a {
+  gap: .5rem;
+  display: flex;
+  align-items: center;
+}
+.ContactoRedesColumn .redesIcons {
+  gap: 1rem;
+  display: flex;
+}
+
+/* FIN ESTILOS LOGO - LOCATION - CONTACTO Y REDES */
+
+/* RECONOCIMIENTOS */
+.awards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 2rem;
+}
+.award{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+/* FIN RECONOCIMIENTOS */

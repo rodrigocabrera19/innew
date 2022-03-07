@@ -1,0 +1,18 @@
+/* Estilos a btn de agendar una reunión */
+.agendar-reunion-btn {
+    background: #e14192;
+    border-radius: 0 50px 50px 50px;
+    font-family: var(--innew-font);
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    -moz-box-shadow: 0 2px 2px #999;
+    -webkit-box-shadow: 0 2px 2px #999;
+    box-shadow: 0 2px 2px #999;
+    transition: transform 0.2s;
+  }
+  .agendar-reunion-btn:hover {
+    transform: scale(1.1);
+  }

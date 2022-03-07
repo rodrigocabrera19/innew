@@ -1,0 +1,11 @@
+{
+  "header": {
+    "cases": "CASOS"
+  },
+  "portada":{
+    "countries": "Paises",
+    "projects": "Proyectos",
+    "partners": "Partners",
+    "schedule-meeting": "Agendar reunión"
+  }
+}

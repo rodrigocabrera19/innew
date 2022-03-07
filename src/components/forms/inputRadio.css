@@ -1,0 +1,96 @@
+.inputs-radio-container {
+  display: flex;
+  column-gap: 1rem;
+  font-family: var(--innew-font);
+  font-size: 11px;
+  align-items: center;
+  font-weight: 600;
+  padding: 0.3rem 0;
+  position: relative;
+}
+.content-input input,
+.content-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.content-input input {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+}
+
+.content-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+/* Estas reglas se aplicarán a todos las elementos i después de cualquier input*/
+.content-input input + i {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Estas reglas se aplicarán a todos los i despues de un input de tipo radio*/
+.content-input input[type="radio"] + i {
+  height: 13px;
+  min-width: 13px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.content-input input[type="radio"] + i:before {
+  content: "";
+  display: block;
+  height: 9px;
+  width: 9px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -35%;
+  top: 50%;
+  margin-top: -35%;
+  background: var(--primary-color);
+  transition: all 0.25s ease; /* Todas las propiedades | tiempo | tipo movimiento */
+  transform: scale(0) /* Lo reducimos a 0*/;
+  opacity: 0; /* Lo ocultamos*/
+}
+.content-input input[type="radio"]:checked + i:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.content-input:hover input[type="radio"]:not(:checked) + i {
+  background: transparent;
+}
+
+/****************** Versión desktop *********************/
+@media (min-width: 1024px) {
+  .inputs-radio-container {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .content-input {
+    gap: 0.5rem;
+  }
+
+  /* Estas reglas se aplicarán a todos los i despues de un input de tipo radio*/
+  .content-input input[type="radio"] + i {
+    height: 20px;
+    min-width: 20px;
+  }
+
+  .content-input input[type="radio"] + i:before {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+/****************** Fin versión desktop *********************/

@@ -1,0 +1,43 @@
+.submit-container {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.submit-button {
+  height: 31px;
+  width: 60px;
+  padding: 0 0.2rem;
+  border-radius: var(--border-radius);
+  font-family: var(--innew-font);
+  font-weight: 700;
+  font-size: 11px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.submit-button:hover {
+  background: var(--secondary-color);
+  -moz-box-shadow: 0 2px 2px #999;
+  -webkit-box-shadow: 0 2px 2px #999;
+  box-shadow: 0 2px 2px #999;
+}
+
+.form-container-active .submit-button {
+  background: var(--secondary-color);
+}
+.form-container-active .submit-button:hover {
+  background: var(--primary-color);
+}
+/****************** Versión desktop *********************/
+@media (min-width: 1024px) {
+  .submit-button {
+    height: 44px;
+    width: inherit;
+    padding: 0 2rem;
+    font-size: 17px;
+  }
+}
+
+/****************** Fin versión desktop *********************/

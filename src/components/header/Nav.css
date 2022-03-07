@@ -1,0 +1,81 @@
+#header-container nav{
+  display: none;
+}
+#header-logo{
+  display: block;
+}
+
+@media (min-width: 1024px){
+  #header-container nav {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  #header-container nav .web-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 560px;
+    list-style: none;
+  }
+  
+  .web-section li a {
+    text-decoration: none;
+    font-family: var(--innew-font);
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .language-change-btn {
+    background: transparent;
+    font-family: var(--innew-font);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--secondary-color);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  #header-container nav .laguage-container{
+    display: flex;
+    gap: .4rem;
+  }
+  #header-container nav .change-language{
+    border: none;
+    font-family: var(--innew-font);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
+  #header-container nav .laguage-container select:focus{
+    outline: none;
+  }
+  #header-container nav .laguage-container select:focus-visible{
+    outline: transparent;
+  }
+  #header-container nav .laguage-container select option{
+    border: none;
+    font-family: var(--innew-font);
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--secondary-color);
+    cursor: pointer !important;
+  }
+}
+
+@media (min-width: 1300px){
+  #header-container nav .web-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 560px;
+    gap: 7rem;
+  }
+}

@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  --primary-color: #430c89;
+  --secondary-color: #822cdd;
+  --border-radius: 0 10px 10px 10px;
+  --innew-font: "Barlow", sans-serif;
+}
+a {
+  text-decoration: none;
+  font-family: var(--innew-font);
+  color: #fff;
+}

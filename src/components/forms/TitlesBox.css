@@ -1,0 +1,290 @@
+#titlesBox-container {
+  width: 98%;
+  height: 51%;
+  background: #fff;
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 0;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  border-radius: 0 2rem 2rem 2rem;
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.6s all;
+}
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 200%;
+  transition: transform 0.6s;
+}
+
+#form-box.animationActive #titlesBox-container .overlay {
+  transform: translateY(-50%);
+}
+/* Animation translate to left y right */
+#form-box.animationActive #titlesBox-container {
+  transform: translate(-50%, 94%);
+}
+/* Fin de Animation translate to left y right */
+
+/* Sumate y contacto title */
+.title-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+  top: 0;
+  height: 50%;
+  width: 100%;
+  transform: translateY(0);
+  transition: transform 0.7s ease-in-out;
+}
+.overlay-left {
+  top: 0;
+  transform: translateY(-5%);
+}
+
+#form-box.animationActive #titlesBox-container .overlay .overlay-left {
+  transform: translateY(-20%);
+}
+
+.overlay-right {
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+#form-box.animationActive #titlesBox-container .overlay .overlay-right {
+  transform: translateY(95%);
+}
+
+/* Image y título */
+.talk-we-icon {
+  display: flex;
+  padding-bottom: 0.5rem;
+}
+.sumate-icon {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+.contacto-title,
+.sumate-title {
+  font-size: 39px;
+  line-height: 0.8;
+  margin: 0 0 0.5rem 0;
+  font-weight: 300;
+  font-family: var(--innew-font);
+  color: var(--primary-color);
+  text-align: left;
+  word-spacing: -5px;
+  width: 100%;
+}
+.contacto-title span,
+.sumate-title span {
+  font-size: calc(2em - 35%);
+  font-weight: 900;
+  font-family: var(--innew-font);
+}
+.contacto-legend,
+.sumate-legend {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 800;
+  font-family: var(--innew-font);
+  color: var(--primary-color);
+  text-align: left;
+}
+/* Cambio de 'color' al activar la animation */
+#titlesBox-container.color-change .sumate-title,
+.sumate-legend {
+  color: var(--secondary-color);
+}
+/* fin de Sumate y contacto title */
+
+/* Animación de formulario enviado */
+.contact-msg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(-100%) scale(1);
+  transform: translateY(-100%) scale(1);
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: var(--primary-color);
+  z-index: 5;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+}
+
+.join-msg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(-100%) scale(1);
+  transform: translateY(-100%) scale(1);
+  display: block;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: var(--secondary-color);
+  z-index: 5;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+}
+
+#titlesBox-container h3 {
+  position: absolute;
+  top: -100%;
+  left: 20%;
+  font-family: var(--innew-font);
+  font-size: 25px;
+  text-align: center;
+  font-weight: bolder;
+  color: #fff;
+  -webkit-transition: 0.3s ease-in-out 1.2s;
+  transition: 0.3s ease-in-out 1.2s;
+  width: 100%;
+}
+#titlesBox-container h3 span {
+  font-size: 60px;
+}
+#titlesBox-container.sent-contacto-msg .contact-msg {
+  transform: translateY(40%) scale(5);
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+}
+#titlesBox-container.sent-contacto-msg h3:nth-of-type(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  z-index: 8;
+}
+
+#titlesBox-container.sent-join-msg .join-msg {
+  transform: translateY(40%) scale(5);
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+}
+#titlesBox-container.sent-join-msg h3:nth-of-type(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  z-index: 8;
+}
+/* FIN TITLES BOX */
+
+/* Animación de cuando el formulario es completado y enviado */
+#form-box.animationActive.sent-msg #titlesBox-container {
+  transform: translate(-50%, 0);
+}
+#form-box.sent-msg #titlesBox-container {
+  transform: translate(-50%, 0);
+}
+/* Fin Animación de cuando el formulario es completado y enviado */
+
+@media (min-width: 1024px) {
+  /* TITLES BOX */
+  #titlesBox-container {
+    width: 50%;
+    height: 100%;
+    left: 2%;
+    top: 0;
+    transform: translateX(4%);
+    border-radius: 0 7rem 7rem 7rem;
+  }
+  .overlay {
+    width: 200%;
+    height: 100%;
+  }
+  #form-box.animationActive #titlesBox-container .overlay {
+    transform: translateX(-50%);
+  }
+  /* Animation translate to left y right */
+  #form-box.animationActive #titlesBox-container {
+    transform: translateX(91%);
+  }
+  /* Fin de Animation translate to left y right */
+
+  /* Sumate y contacto title */
+  .title-container {
+    padding: 0 40px;
+    height: 100%;
+    width: 50%;
+  }
+  .overlay-left {
+    left: 0;
+    transform: translateX(-5%);
+  }
+
+  #form-box.animationActive #titlesBox-container .overlay .overlay-left {
+    transform: translateX(-20%);
+  }
+
+  .overlay-right {
+    right: 0;
+    transform: translateX(20%);
+  }
+
+  #form-box.animationActive #titlesBox-container .overlay .overlay-right {
+    transform: translateX(5%);
+  }
+
+  /* Image y título */
+  .talk-we-icon {
+    display: flex;
+  }
+  .sumate-icon {
+    width: 80%;
+  }
+  .contacto-title,
+  .sumate-title {
+    font-size: 50px;
+  }
+  .contacto-title span,
+  .sumate-title span {
+    font-size: 94px;
+  }
+  .contacto-legend,
+  .sumate-legend {
+    font-size: 18px;
+  }
+
+  /* Animación de formulario enviado */
+  .contact-msg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .join-msg {
+    width: 20px;
+    height: 20px;
+  }
+
+  #titlesBox-container h3 {
+    font-size: 40px;
+    width: 100%;
+  }
+  #titlesBox-container h3 span {
+    font-size: 70px;
+  }
+  /* FIN TITLES BOX */
+
+  /* Animación de cuando el formulario es completado y enviado */
+  #form-box.animationActive.sent-msg #titlesBox-container {
+    transform: translateX(50%);
+  }
+  #form-box.sent-msg #titlesBox-container {
+    transform: translateX(50%);
+  }
+  /* Fin Animación de cuando el formulario es completado y enviado */
+}
