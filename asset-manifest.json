@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/innew-web/static/css/main.d3876448.css",
+    "main.js": "/innew-web/static/js/main.e2f9974e.js",
+    "static/media/portada.png": "/innew-web/static/media/portada.d322b1a6ad4a1edfa0ce.png",
+    "static/media/portada-mobile.png": "/innew-web/static/media/portada-mobile.cd70442d686bad9241fa.png",
+    "static/media/desktop-merlino.png": "/innew-web/static/media/desktop-merlino.e5508e7090485ee6daf5.png",
+    "static/media/mobile-merlino.png": "/innew-web/static/media/mobile-merlino.abe6cd2281ad7686e507.png",
+    "index.html": "/innew-web/index.html",
+    "main.d3876448.css.map": "/innew-web/static/css/main.d3876448.css.map",
+    "main.e2f9974e.js.map": "/innew-web/static/js/main.e2f9974e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3876448.css",
+    "static/js/main.e2f9974e.js"
+  ]
+}
